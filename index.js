@@ -138,7 +138,7 @@ function allRecipe() {
         
         <h4 class="card-title">${ele.name}</h4>
         <p class="card-text danger-text">${ele.time} &nbsp; &nbsp;&nbsp; &nbsp;<span>${ele.rating}</span> </p>
-       <button class='' onclick='toggel(this)'>  <span class="material-symbols-outlined">
+       <button class="" onclick='toggel(this)'>  <span class="material-symbols-outlined ">
        favorite
        </span></button>
       
@@ -155,7 +155,6 @@ function vegRecipe(e) {
   filterveg.forEach((ele) => {
     let div = document.createElement("div");
     div.innerHTML = `
-    
       <div class="card" style="width: 20rem;">
       <img src="${ele.imageSrc}"  height='300px'class="card-img-top" alt="...">
       <div class="card-body">
@@ -163,10 +162,9 @@ function vegRecipe(e) {
         
         <h4 class="card-title">${ele.name}</h4>
         <p class="card-text danger-text">${ele.time} &nbsp; &nbsp;&nbsp; &nbsp;<span>${ele.rating}</span> </p>
-       <button class='' onclick='toggel(this)'>  <span class="material-symbols-outlined">
+       <button class="" onclick='toggel(this)'>  <span class="material-symbols-outlined">
        favorite
-       </span></button>
-      
+       </span></button>     
       </div>
     </div>
       `;
@@ -225,7 +223,7 @@ function searchFun() {
         
         <h4 class="card-title">${ele.name}</h4>
         <p class="card-text danger-text">${ele.time} &nbsp; &nbsp;&nbsp; &nbsp;<span>${ele.rating}</span> </p>
-       <button class='' onclick='toggel(this)'>  <span class="material-symbols-outlined">
+       <button class='' onclick='toggel(this)'>  <span class="material-symbols-outlined ">
        favorite
        </span></button>
       
@@ -238,3 +236,11 @@ function searchFun() {
   });
 }
 
+//like and dislike
+function toggel(btn) {
+if(btn.classList.contains('hide')){
+  btn.classList.remove('hide')
+}else{
+  btn.classList.add('hide')
+}
+}
