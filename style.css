@@ -1,0 +1,18 @@
+#card-section
+/* #card-veg,#card-nonveg */
+{
+    display: flex;
+ flex-wrap: wrap;
+ gap: 1.5rem;
+
+}
+/* #card-veg ,#card-nonveg{
+    margin-top: -12rem;
+} */
+
+.hide{
+   background-color: aqua;
+}
+.adiba{
+    background-color: aqua;
+}
